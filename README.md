@@ -1,13 +1,4 @@
 # 💻 DeFi & Blockchain - Site de Finanças Descentralizadas
-
-## 📋 Índice
-
-1. [Sobre o Projeto](#sobre-o-projeto)
-2. [O que é DeFi?](#o-que-é-defi)
-3. [Tecnologias Utilizadas](#tecnologias-utilizadas)
-4. [Estrutura do Site](#estrutura-do-site)
-5. [Funcionalidades Adicionais](#funcionalidades-adicionais)
-
 ---
 
 ## 📝 Sobre o Projeto
