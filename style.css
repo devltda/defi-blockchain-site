@@ -1,0 +1,270 @@
+/* Fontes importadas */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Poppins:wght@600;800&display=swap');
+
+/* Estilo geral do corpo */
+body {
+    background-color: #0a0a23;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    padding-top: 80px;
+}
+
+/* Cabeçalhos */
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #00ffab; /* Verde neon */
+    text-align: center;
+}
+
+/* Navbar */
+.navbar {
+    background: linear-gradient(90deg, #8a2be2 0%, #0a0a23 100%);
+    padding: 15px 0;
+}
+
+.navbar-scrolled {
+    background: #121233;
+}
+
+/* Menu expansível */
+.menu-icon {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.menu-icon .menu-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #121233;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    border-radius: 8px;
+}
+
+.menu-icon .menu-content a {
+    color: #ffffff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #8a2be2;
+    transition: background-color 0.3s ease;
+}
+
+.menu-icon .menu-content a:hover {
+    background-color: #8a2be2;
+}
+
+.menu-icon:hover .menu-content {
+    display: block;
+}
+
+.menu-icon:hover .menu-button {
+    background-color: #8a2be2;
+}
+
+/* Seções principais */
+section {
+    padding: 80px 0;
+    background-size: cover;
+    background-position: center;
+}
+
+#inicio {
+    background: linear-gradient(135deg, #0a0a23 30%, #8a2be2 100%);
+    text-align: center;
+    padding-top: 120px;
+}
+
+#casos-uso {
+    background: url('https://www.transparenttextures.com/patterns/cubes.png'), linear-gradient(135deg, #0a0a23 30%, #8a2be2 100%);
+}
+
+#vantagens-desvantagens {
+    background: url('https://www.transparenttextures.com/patterns/cubes.png'), linear-gradient(135deg, #8a2be2 30%, #0a0a23 100%);
+    color: #b8b8d4;
+}
+
+#seguranca-blockchain {
+    background: url('https://www.transparenttextures.com/patterns/graph-paper.png'), linear-gradient(135deg, #0a0a23 30%, #8a2be2 100%);
+    color: #b8b8d4;
+}
+
+#links-externos {
+    background-color: #0a0a23;
+    text-align: center;
+}
+
+h2.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+h2.section-title::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: #00ffab;
+    margin: 20px auto;
+}
+
+/* Cartões de conteúdo com gradiente e animação */
+.card {
+    background: linear-gradient(135deg, #2a2a3c, #1a1a3c);
+    border: 1px solid #8a2be2;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #e0e0ff;
+    position: relative;
+    max-width: 300px;
+    min-height: 250px;
+    text-align: justify;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.3);
+    border-color: #00ffab;
+}
+
+/* Ícones dentro dos cartões */
+.card h3::before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+
+.card.vantagens h3::before {
+    background-image: url('https://img.icons8.com/ios-filled/50/00ffab/checkmark.png');
+}
+
+.card.desvantagens h3::before {
+    background-image: url('https://img.icons8.com/ios-filled/50/ff0000/alert.png');
+}
+
+/* Separador Luminoso */
+.separator {
+    height: 3px;
+    width: 100%;
+    background: linear-gradient(to right, #8a2be2, #00ffab);
+    margin: 40px 0;
+    border-radius: 50px;
+}
+
+/* Seção "Qual o Motivo Desse Site?" */
+#motivo-site {
+    background: linear-gradient(135deg, #121233 30%, #8a2be2 100%);
+    color: #e0e0ff;
+    padding: 100px 0;
+    text-align: justify;
+}
+
+#motivo-site h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    position: relative;
+    text-align: center;
+    color: #00ffab;
+}
+
+#motivo-site p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    color: #b8b8d4;
+}
+
+/* Botões */
+.btn-primary {
+    background-color: #8a2be2;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #00ffab;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Imagens */
+img {
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Rodapé */
+footer {
+    background-color: #121233;
+    color: #b8b8d4;
+    padding: 40px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Botão de Voltar ao Topo */
+#back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: #00ffab;
+    color: #0a0a23;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+#back-to-top:hover {
+    background-color: #8a2be2;
+    color: #ffffff;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .navbar {
+        padding: 10px 0;
+    }
+
+    .nav-link {
+        margin: 0 10px;
+        font-size: 1rem;
+    }
+}
